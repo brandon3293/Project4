@@ -1,0 +1,19 @@
+body{
+    background-color: green;
+}
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+h1{
+    background-color: rgb(178, 230, 96);
+    box-shadow: 10px 5px 5px rgb(214, 236, 177);
+    text-align: center;
+
+}
+#GList h2{
+    display: flex;
+    justify-content: center;
+    margin-right:100px;
+
+}

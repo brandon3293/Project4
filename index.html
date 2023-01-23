@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body onload="init();">
+    <h1>Shop Lift Up, Inc</h1>
+    <div id="wrapper">
+        <div id="GList">
+            <h2>Grocery List</h2>
+            <ol id="items"></ol>
+        </div>
+        <div id="adding">
+            <form onsubmit="return false">
+                <!-- <span style="color:blue">
+                    Add items 1 by 1 or list them out(ex: itm1, itm2, and itm3)
+                </span><br> -->
+                <span>
+                    What would you like to add to your list? 
+                    <span><input id="itm"type="text"><button onclick="AddItm();">Add</button></span>
+                    
+                </span>
+            </form>
+        </div>
+        <div id="AlterList">
+            <span>What would you like to change on your list?</span>
+            <form onsubmit="return false">
+                <input id="alter" type="number"value="0" min="1" max="99999"><br>
+                <button onclick="DeleteItm();">Delete</button>
+                <button onclick="MoveItmUP();">Move Up</button>
+                <button onclick="MoveItmDOWN();">Move Down</button>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
